@@ -17,16 +17,6 @@
 -->
 
 <resources>
-    <!-- Orientation of a widget. -->
-    <attr name="direction">
-        <!-- Vertical widget. -->
-        <enum name="vertical" value="0" />
-        <!-- Horizontal widget. -->
-        <enum name="horizontal" value="1" />
-    </attr>
-
-    <skip />
-
     <!-- Cling specific attributes. These attributes are used to customize
          the cling in XML files. -->
     <declare-styleable name="Cling">
@@ -66,16 +56,6 @@
         <attr name="heightGap" format="dimension" />
         <!-- The max gap size for each dimension -->
         <attr name="maxGap" format="dimension" />
-    </declare-styleable>
-
-    <!-- StrokedTextView specific attributes. -->
-    <declare-styleable name="StrokedTextView">
-        <!-- The color of the stroke outline -->
-        <attr name="strokeColor" format="color" />
-        <!-- The color of the text -->
-        <attr name="strokeTextColor" format="color" />
-        <!-- The width of the stroke -->
-        <attr name="strokeWidth" format="float" />
     </declare-styleable>
 
     <!-- HolographicLinearLayout specific attributes. -->
@@ -141,13 +121,6 @@
         <attr name="clingFocusedY" format="integer" />
     </declare-styleable>
 
-    <!-- HandleView specific attributes. These attributes are used to customize
-         a HandleView view in XML files. -->
-    <declare-styleable name="HandleView">
-        <!-- Orientation of the handle. -->
-        <attr name="direction" />
-    </declare-styleable>
-
     <!-- XML attributes used by default_workspace.xml -->
     <declare-styleable name="Favorite">
         <attr name="className" format="string" />
@@ -168,5 +141,20 @@
         <attr name="min" format="integer" />
         <attr name="maxExternal" format="string" />
         <attr name="minExternal" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DoubleNumberPickerPreference">
+        <attr name="defaultValue1" format="integer" />
+        <attr name="defaultValue2" format="integer" />
+        <attr name="max1" format="integer" />
+        <attr name="min1" format="integer" />
+        <attr name="max2" format="integer" />
+        <attr name="min2" format="integer" />
+        <attr name="maxExternal1" format="string" />
+        <attr name="minExternal1" format="string" />
+        <attr name="maxExternal2" format="string" />
+        <attr name="minExternal2" format="string" />
+        <attr name="pickerTitle1" format="string" />
+        <attr name="pickerTitle2" format="string" />
     </declare-styleable>
 </resources>
